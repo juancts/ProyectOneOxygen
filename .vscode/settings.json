@@ -1,3 +1,19 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "ProyectOneOxygen"
+    "liveServer.settings.multiRootWorkspaceName": "ProyectOneOxygen",
+    "liveSassCompile.settings.includeItems": [
+
+
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.showAnnouncements": null,
+    "liveSassCompile.settings.useNewCompiler": false,
+    "liveSassCompile.settings.formats": [
+
+        {
+            "format": "compressed",
+            "extensionName": ".css",
+            "savePath": "/public/css/",
+            "savePathReplacementPairs": null
+        }
+    ]
 }
