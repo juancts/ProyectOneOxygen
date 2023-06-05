@@ -41,29 +41,70 @@ body {
 
 .banner {
   display: block;
-  &__div{
+  &__div {
     max-width: 375px;
     text-align: center;
-    font-family: "Raleway";
-    font-style: normal;
-    
   }
 
   &__title {
+    margin: 1em;
+    font-family: "Raleway";
+    font-style: normal;
     font-weight: 400;
     font-size: 35px;
     line-height: 41px;
     display: inline-block;
     max-width: 375px;
-     
   }
-  &__subtitle{
-    
+  &__subtitle {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
   }
 
   &__button {
+    margin-top: 50px;
+    font-family: "Open Sans";
+    color: #ffffff;
+    min-width: 310px;
+    min-height: 67px;
+    border: none;
+    font-family: "Open Sans";
     background-color: #08a6e4;
     box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
     border-radius: 40px;
+  }
+
+  &__img {
+    padding-top: 10%;
+    width: 779px;
+    height: 267px;
+    margin-left: -201.5px;
+    top: 434px;
+  }
+}
+
+.platform {
+  display: block;
+  align-items: center;
+  align-content: center;
+  &__div {
+    max-width: 375px;
+  }
+
+  &__title {
+    padding: 30px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
   }
 }
