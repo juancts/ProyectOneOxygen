@@ -41,18 +41,24 @@ body {
 
 .banner {
   display: block;
-  align-items: center;
-
-  &__div title {
+  &__div{
+    max-width: 375px;
     text-align: center;
-    background-color: red;
     font-family: "Raleway";
     font-style: normal;
+    
+  }
+
+  &__title {
     font-weight: 400;
     font-size: 35px;
     line-height: 41px;
     display: inline-block;
     max-width: 375px;
+     
+  }
+  &__subtitle{
+    
   }
 
   &__button {
