@@ -10,6 +10,7 @@ $cabecera-text-color: #333;
 }
 body {
   min-width: 320px;
+  max-width: 375px;
 }
 
 .header {
@@ -40,46 +41,43 @@ body {
 }
 
 .banner {
-  display: block;
   &__div {
     max-width: 375px;
     text-align: center;
-  }
+    margin-top: 2em;
+    padding: 10px;
 
-  &__title {
-    margin: 1em;
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 41px;
-    display: inline-block;
-    max-width: 375px;
+    &__title {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 41px;
+      max-width: 375px;
+    }
+    &__subtitle {
+      padding-left: 40px;
+      padding-right: 40px;
+      // margin-top: 1em;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 23px;
+    }
+    &__button {
+      // margin-top: 50px;
+      font-family: "Open Sans";
+      color: #ffffff;
+      min-width: 310px;
+      min-height: 67px;
+      border: none;
+      font-family: "Open Sans";
+      background-color: #08a6e4;
+      box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+      border-radius: 40px;
+    }
   }
-  &__subtitle {
-    padding-left: 40px;
-    padding-right: 40px;
-
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
-  }
-
-  &__button {
-    margin-top: 50px;
-    font-family: "Open Sans";
-    color: #ffffff;
-    min-width: 310px;
-    min-height: 67px;
-    border: none;
-    font-family: "Open Sans";
-    background-color: #08a6e4;
-    box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
-    border-radius: 40px;
-  }
-
   &__img {
     padding-top: 10%;
     width: 779px;
@@ -90,21 +88,186 @@ body {
 }
 
 .platform {
-  display: block;
   align-items: center;
-  align-content: center;
-  &__div {
-    max-width: 375px;
-  }
+  text-align: center;
+  font-family: "Raleway";
+  max-width: 375px;
 
   &__title {
-    padding: 30px;
-    font-family: "Raleway";
     font-style: normal;
     font-weight: 300;
     font-size: 30px;
     line-height: 35px;
-    text-align: center;
     color: #000000;
+  }
+
+  &__cantidad {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 5.96px;
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: #a5a5a5;
+    padding-bottom: 5%;
+  }
+
+  &__img {
+    position: relative;
+  }
+
+  //SECTION 1 DAILY ENTRIES
+
+  &__dailyentries {
+    &__elipse {
+      
+      width: 62.71px;
+      height: 62.71px;
+      left: 21.73px;
+      top: 0px;
+    }
+    &__person2 {
+      position: absolute;
+      width: 44px;
+      height: 52px;
+      left: 185px;
+      top: 3px;
+    }
+  }
+  //FIN SECTION 1 DAILY ENTRIES
+
+  //SECTION 2 SEEN PRODUCTS
+
+  &__seenproducts {
+    &__elipse2 {
+      width: 63px;
+      height: 63px;
+      left: 57px;
+      top: 0px;
+    }
+    &__eye {
+      position: absolute;
+      width: 65.43px;
+      height: 36.5px;
+      left: 178px;
+      top: 12.25px;
+    }
+  }
+
+  //FIN SECTION 2 SEENPRODUCTS
+
+  //SECTION 3 ADDED POSTS
+  &__addedposts {
+    &__elipse3 {
+      width: 62.71px;
+      height: 62.71px;
+      left: 50.66px;
+      top: 0px;
+    }
+    &__catalog {
+      position: absolute;
+      width: 52px;
+      height: 48px;
+      left: 185px;
+      top: 6px;
+    }
+  }
+  //FIN SECTION 3 ADDED POSTS
+}
+
+.cardsection {
+  display: block;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 30px;
+  width: 375px;
+  height: 1395.66px;
+  left: 0px;
+  top: 1426px;
+  background: #f7f7f7;
+
+  &__img {
+    position: relative;
+    margin: 10px;
+  }
+
+  h2 {
+    margin-top: 50px;
+    padding: 21px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+  }
+
+  p {
+    padding: 21px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+  }
+
+  &__container {
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e8e9ed;
+    border-radius: 5px;
+    max-width: 314px;
+    height: 370px;
+    left: 0px;
+    top: 0px;
+
+    
+
+    &__rectangle {
+      background-color: #FB3B64;
+      transform: rotate(45deg);
+      position: relative;
+      border-radius: 45%;
+      top: 15px;
+      left: 178px;
+      width: 85px;
+      height: 85px;
+      z-index: 1;
+    }
+
+    &__macbook {
+      position: absolute;
+      padding-left: 55px;
+      padding-top: 37.11px;
+      width: 256px;
+      z-index: 2;
+    }
+
+    &__elipse{
+      position: absolute;
+      width: 145px;
+      left: 27%;
+      z-index: 1;
+    }
+
+    &__iphone{
+      position: absolute;
+      top: 10px;
+      left: 27%;
+      width: 200px;
+      z-index: 2;
+    }
+    
   }
 }
