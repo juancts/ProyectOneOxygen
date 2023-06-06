@@ -359,7 +359,7 @@ body {
     top: 25%;
     display: inline-block;
     margin-left: 25px;
-
+    
     span {
       font-family: "Open Sans";
       font-style: normal;
@@ -367,6 +367,20 @@ body {
       font-size: 46px;
       line-height: 64px;
       color: #fb3b64;
+    }
+    &--premium{
+      position: absolute;
+    top: 25%;
+    display: inline-block;
+    margin-left: 25px;
+      span {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 46px;
+        line-height: 64px;
+        color: #55DFB4;
+      }
     }
   }
   &__details {
@@ -535,7 +549,6 @@ body {
     }
   }
   &__redes {
-    
     padding: 10px;
     float: right;
   }
