@@ -284,6 +284,18 @@ body {
 .pricing {
   align-content: center;
 
+  button {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    color: white;
+    border: none;
+    border-radius: 23px;
+    width: 150px;
+    height: 50px;
+  }
   h1,
   h3 {
     text-align: center;
@@ -314,22 +326,31 @@ body {
     border-radius: 18px;
     width: 293px;
     height: 251px;
+    &--premium {
+      position: relative;
+      margin-left: 35px;
+      margin-top: 30px;
+      align-content: center;
+      align-items: center;
+      border: 1px solid #55dfb4;
+      border-radius: 18px;
+      width: 293px;
+      height: 251px;
+
+      button {
+        position: absolute;
+        bottom: -55px;
+        right: 35%;
+        background: #55dfb4;
+      }
+    }
 
     button {
-      font-family: "Open Sans";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 13px;
-      line-height: 18px;
-      color: white;
       position: absolute;
       bottom: -25px;
       right: 25%;
-      width: 150px;
-      height: 50px;
+
       background: #eb476e;
-      border: none;
-      border-radius: 23px;
     }
   }
 
@@ -337,7 +358,7 @@ body {
     position: absolute;
     top: 25%;
     display: inline-block;
-    margin-left: 35px;
+    margin-left: 25px;
 
     span {
       font-family: "Open Sans";
@@ -349,14 +370,137 @@ body {
     }
   }
   &__details {
-    display: inline-block;
+    position: absolute;
     margin-top: 25px;
-    margin-left: 125px;
+    left: 155px;
     ul {
       list-style: none;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
     }
     li {
       margin-bottom: 20px;
     }
+  }
+
+  &__professional {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 15px;
+    width: 339px;
+    height: 277px;
+    left: 0px;
+    top: 0px;
+    background: #ffffff;
+    border: 1px solid #07ace6;
+    box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
+    border-radius: 18px;
+    span {
+      color: #07ace6;
+    }
+    button {
+      position: absolute;
+      background: #07ace6;
+      bottom: -80px;
+      left: -55px;
+    }
+  }
+}
+
+.contact {
+  margin-top: 50px;
+  h1 {
+    text-align: center;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 47px;
+    color: #000000;
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+  }
+  i {
+    color: #07ace6;
+  }
+  p {
+    margin-top: 15px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #a5a5a5;
+  }
+  form {
+    display: block;
+  }
+  span {
+    text-align: center;
+    margin-left: 60px;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 3.28px;
+    color: #08a6e4;
+  }
+  input {
+    display: block;
+    margin-left: 60px;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 1px solid #95989A;
+    width: 312px;
+  }
+  #id {
+    display: inline-block;
+  }
+  #textocheck {
+    position: absolute;
+    display: inline-block;
+    top: -18px;
+    left: 15px;
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+color: #707070;
+  }
+  &__checkcontainer {
+    position: relative;
+    clear: both;
+    margin-top: 10px;
+    label {
+      float: left;
+    }
+    input [type="checkbox"] {
+
+      float: left;
+      margin-left: 5px;
+    }
+    
+  }
+  button{
+    position: absolute;
+    top: 100px;
+
   }
 }
