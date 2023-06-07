@@ -18,6 +18,7 @@ $cabecera-text-color: #333;
     display: flex;
     justify-content: space-between;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+    position: relative;
     &__logo {
       display: none;
     }
@@ -183,7 +184,6 @@ $cabecera-text-color: #333;
     }
   }
   .cardsection {
-    background-color: #08a6e4;
     align-content: center;
     &__container {
       margin: 10%;
@@ -232,9 +232,40 @@ $cabecera-text-color: #333;
 
       &__description {
         text-align: left;
-        margin-left: -50px;
-        padding-right: 150px;
+
         flex-direction: column;
+
+        &--section2 {
+          display: flex;
+          text-align: left;
+          flex-direction: column;
+          margin-right: 20px;
+          h2 {
+            width: 237px;
+            height: 42px;
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 42px;
+            color: #000000;
+            padding-bottom: 50px;
+          }
+          p {
+            padding-right: 20px;
+            padding-bottom: 50px;
+            border-bottom: solid blue;
+            width: 416px;
+            height: 66px;
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #000000;
+          }
+        }
+
         h2 {
           width: 237px;
           height: 42px;
@@ -246,6 +277,8 @@ $cabecera-text-color: #333;
           color: #000000;
         }
         p {
+          padding-bottom: 50px;
+          border-bottom: solid red;
           width: 416px;
           height: 66px;
           font-family: "Open Sans";
@@ -264,7 +297,7 @@ $cabecera-text-color: #333;
       }
       &__iphone {
         position: relative;
-        top: 50px;
+        top: -50px;
         left: 50px;
         z-index: 2;
         width: 400px;
