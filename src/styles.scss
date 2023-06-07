@@ -51,7 +51,7 @@ $cabecera-text-color: #333;
       color: #a5a5a5;
     }
   }
-}
+
 
 .banner {
   display: flex;
@@ -98,8 +98,13 @@ $cabecera-text-color: #333;
 .platform {
   display: flex;
   flex-direction: column;
-    &__title {
-      width: 100%;
+
+&__img{
+  position: relative;
+}
+
+  &__title {
+    width: 100%;
     height: 42px;
     font-family: "Raleway";
     font-style: normal;
@@ -109,14 +114,59 @@ $cabecera-text-color: #333;
     text-align: center;
     color: #000000;
   }
-  &__content{
+  &__content {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
-  
-}
 
+  &__dailyentries{
+    &__elipse{
+        position:absolute;
+        z-index:1;
+    }
+    &__person2{
+        position: absolute;
+        z-index: 2;
+        left: 135px;
+    }
+  }
+
+  &__seenproducts{
+    &__elipse2{
+      position: absolute;
+      z-index: 1;
+    }
+    &__eye{
+      position: absolute;
+      z-index: 2;
+    }
+  }
+
+  &__cantidad {
+    padding-left: 75px;
+    padding-top: 55px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 5.96px;
+    color: #000000;
+  }
+  &__description {
+    padding-left: 55px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: #a5a5a5;
+  }
+}
+}
 // MOVIL
 
 @media (max-width: 768px) {
