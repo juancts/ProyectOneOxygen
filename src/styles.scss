@@ -3,6 +3,30 @@
 $cabecera-bg: #f2f2f2;
 $cabecera-text-color: #333;
 
+//Mixins
+
+@mixin cardscontainers {
+  margin: 10%;
+  align-content: center;
+  width: 1124px;
+  height: 370px;
+  background: #ffffff;
+  border: 1px solid #e8e9ed;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin h2cards {
+  width: 237px;
+  height: 42px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+}
 // DESKTOP
 
 @media (min-width: 768px) {
@@ -185,33 +209,41 @@ $cabecera-text-color: #333;
   }
   .cardsection {
     align-content: center;
-    &__container {
-      margin: 10%;
-      align-content: center;
-      width: 1124px;
-      height: 370px;
-      background: #ffffff;
-      border: 1px solid #e8e9ed;
-      border-radius: 5px;
+    &__container3 {
       display: flex;
+      flex-direction: row;
+    }
+    &__container {
       flex-direction: row-reverse;
-      justify-content: center;
+      @include cardscontainers;
 
       &--section2 {
-        margin: 10%;
-        align-content: center;
-        width: 1124px;
+        flex-direction: row;
+        @include cardscontainers;
+      }
+
+      &--section3 {
+        @include cardscontainers;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        justify-content: space-between;
+              }
+      &__textsec3 {
+        width: 540px;
         height: 370px;
         background: #ffffff;
         border: 1px solid #e8e9ed;
         border-radius: 5px;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
       }
-
       &__img {
         position: relative;
+        &--se3 {
+          
+          width: 440px;
+        }
       }
 
       &__macbook {
@@ -230,6 +262,14 @@ $cabecera-text-color: #333;
         z-index: 1;
       }
 
+      &__rectangle6 {
+        width: 440px;
+        height: 370px;
+        background: #55dfb4;
+        border: 1px solid #e8e9ed;
+        border-radius: 5px;
+      }
+
       &__description {
         text-align: left;
 
@@ -239,20 +279,12 @@ $cabecera-text-color: #333;
           display: flex;
           text-align: left;
           flex-direction: column;
-          margin-right: 20px;
+
           h2 {
-            width: 237px;
-            height: 42px;
-            font-family: "Raleway";
-            font-style: normal;
-            font-weight: 400;
-            font-size: 36px;
-            line-height: 42px;
-            color: #000000;
+            @include h2cards;
             padding-bottom: 50px;
           }
           p {
-            padding-right: 20px;
             padding-bottom: 50px;
             border-bottom: solid blue;
             width: 416px;
@@ -267,14 +299,7 @@ $cabecera-text-color: #333;
         }
 
         h2 {
-          width: 237px;
-          height: 42px;
-          font-family: "Raleway";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 36px;
-          line-height: 42px;
-          color: #000000;
+          @include h2cards;
         }
         p {
           padding-bottom: 50px;
@@ -290,23 +315,26 @@ $cabecera-text-color: #333;
         }
       }
       &__elipse {
-        position: relative;
-        top: 70px;
-        right: 20px;
+        position: absolute;
+        width: 228px;
+        height: 228px;
+        bottom: 150px;
+        top: 40px;
+        right: 120px;
         z-index: 1;
       }
       &__iphone {
         position: relative;
-        top: -50px;
-        left: 50px;
+        top: 35px;
+        left: -75px;
         z-index: 2;
-        width: 400px;
+        width: 300px;
       }
     }
   }
 }
 
-// MOVIL
+// MOVIL ********** MOVIL //
 @media (max-width: 768px) {
   * {
     box-sizing: border-box;
