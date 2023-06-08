@@ -39,12 +39,65 @@ $cabecera-text-color: #333;
   text-align: center;
   color: #000000;
 }
+
+@mixin spanpricing {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 46px;
+  line-height: 64px;
+}
+@mixin ulpricing {
+  list-style: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+@mixin pricingbutton {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  color: white;
+  border: none;
+  border-radius: 23px;
+  width: 150px;
+  height: 50px;
+}
+
+@mixin pricingboxdesktop {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 372px;
+  height: 461px;
+  background: #ffffff;
+  border-radius: 18px;
+}
+
+@mixin pricingbox {
+  position: relative;
+  margin-left: 35px;
+  margin-top: 30px;
+  align-content: center;
+  align-items: center;
+  border-radius: 18px;
+  width: 293px;
+  height: 251px;
+}
+
 // DESKTOP
 
 @media (min-width: 768px) {
   body {
     background: #e5e5e5;
-    text-align: center;
+
     margin-left: 50px;
     margin-right: 50px;
   }
@@ -226,6 +279,7 @@ $cabecera-text-color: #333;
     }
     &__container {
       flex-direction: row-reverse;
+
       @include cardscontainers;
 
       &--section2 {
@@ -361,8 +415,53 @@ $cabecera-text-color: #333;
   }
 
   .pricing {
+    background-color: white;
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      margin-bottom: 50px;
+    }
     h1 {
-     @include h1pricing;
+      margin-left: 50%;
+      margin-right: 50%;
+      @include h1pricing;
+    }
+    h1,
+    h3 {
+      text-align: center;
+      font-family: "Raleway";
+    }
+    button {
+      @include pricingbutton;
+      position: absolute;
+      top: 435px;
+      left: 110px;
+      background-color: #eb476e;
+    }
+    &__box {
+      @include pricingboxdesktop;
+      border: 1px solid #fb3b64;
+      &--premium {
+        @include pricingboxdesktop;
+        border: 1px solid #55dfb4;
+        button{
+          background-color: #55DFB4;
+        }
+      }
+    }
+    &__cost {
+      
+      span {
+        @include spanpricing;
+        color: #fb3b64;
+      }
+    }
+    &__details {
+      ul {
+        @include ulpricing;
+      }
     }
   }
 }
@@ -655,16 +754,7 @@ $cabecera-text-color: #333;
     align-content: center;
 
     button {
-      font-family: "Open Sans";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 13px;
-      line-height: 18px;
-      color: white;
-      border: none;
-      border-radius: 23px;
-      width: 150px;
-      height: 50px;
+      @include pricingbutton;
     }
     h1,
     h3 {
@@ -687,25 +777,11 @@ $cabecera-text-color: #333;
     }
 
     &__box {
-      position: relative;
-      margin-left: 35px;
-      margin-top: 30px;
-      align-content: center;
-      align-items: center;
+      @include pricingbox;
       border: 1px solid #fb3b64;
-      border-radius: 18px;
-      width: 293px;
-      height: 251px;
       &--premium {
-        position: relative;
-        margin-left: 35px;
-        margin-top: 30px;
-        align-content: center;
-        align-items: center;
+        @include pricingbox;
         border: 1px solid #55dfb4;
-        border-radius: 18px;
-        width: 293px;
-        height: 251px;
 
         button {
           position: absolute;
@@ -731,11 +807,7 @@ $cabecera-text-color: #333;
       margin-left: 25px;
 
       span {
-        font-family: "Open Sans";
-        font-style: normal;
-        font-weight: 300;
-        font-size: 46px;
-        line-height: 64px;
+        @include spanpricing;
         color: #fb3b64;
       }
       &--premium {
@@ -758,12 +830,7 @@ $cabecera-text-color: #333;
       margin-top: 25px;
       left: 155px;
       ul {
-        list-style: none;
-        font-family: "Open Sans";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 19px;
+        @include ulpricing;
       }
       li {
         margin-bottom: 20px;
