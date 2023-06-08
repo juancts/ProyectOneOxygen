@@ -90,6 +90,17 @@ $cabecera-text-color: #333;
   height: 251px;
 }
 
+@mixin boxcardsectionmovil {
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e8e9ed;
+  border-radius: 5px;
+  max-width: 318px;
+  height: 420px;
+  left: 0px;
+  top: 0px;
+}
+
 // DESKTOP
 
 @media (min-width: 768px) {
@@ -272,6 +283,8 @@ $cabecera-text-color: #333;
     }
   }
   .cardsection {
+    display: flex;
+    flex-direction: column;
     &__container3 {
       display: flex;
       flex-direction: row;
@@ -294,6 +307,12 @@ $cabecera-text-color: #333;
         justify-content: space-between;
       }
       &__textsec3 {
+
+       p{
+        padding-bottom: 55px;
+        border-bottom: solid #55DFB4;
+       }
+
         width: 540px;
         height: 370px;
         background: #ffffff;
@@ -659,9 +678,9 @@ $cabecera-text-color: #333;
     }
     &__img {
       padding-top: 10%;
-      width: 779px;
+      width: 374px;
       height: 267px;
-      margin-left: -201.5px;
+      
       top: 434px;
     }
   }
@@ -774,11 +793,6 @@ $cabecera-text-color: #333;
     top: 1426px;
     background: #f7f7f7;
 
-    &__img {
-      position: relative;
-      margin: 10px;
-    }
-
     h2 {
       margin-top: 50px;
       padding: 21px;
@@ -801,16 +815,19 @@ $cabecera-text-color: #333;
     }
 
     &__container {
-      margin-top: 20px;
-      background-color: #ffffff;
-      border: 1px solid #e8e9ed;
-      border-radius: 5px;
-      max-width: 314px;
-      height: 370px;
-      left: 0px;
-      top: 0px;
+      &__img {
+        position: relative;
+        margin: 10px;
+      }
+      @include boxcardsectionmovil;
+      &--section2 {
+        @include boxcardsectionmovil;
+      }
       &__description {
-        margin-top: 135px;
+        margin-top: 100px;
+        &--section2 {
+          margin-top: 155px;
+        }
       }
       &__rectangle {
         background-color: #fb3b64;
@@ -852,8 +869,12 @@ $cabecera-text-color: #333;
         position: absolute;
         z-index: 2;
       }
+      &__textsec3{
+        max-width: 318px;
+        background-color: #ffffff ;
+      }
       &__rectangle6 {
-        left: -10px;
+        background-color: #55dfb4;
         width: 314px;
         height: 195px;
         position: absolute;
@@ -967,8 +988,8 @@ $cabecera-text-color: #333;
       button {
         position: absolute;
         background: #07ace6;
-        bottom: -80px;
-        left: -55px;
+        bottom: -20px;
+        left:90px
       }
     }
   }
