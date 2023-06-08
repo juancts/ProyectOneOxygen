@@ -29,8 +29,7 @@ $cabecera-text-color: #333;
 }
 
 @mixin h1pricing {
-  width: 114px;
-  height: 42px;
+  
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
@@ -423,9 +422,16 @@ $cabecera-text-color: #333;
 
       margin-bottom: 50px;
     }
+    p{
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 14px;
+      color: #13253B;
+    }
     h1 {
-      margin-left: 50%;
-      margin-right: 50%;
+      text-align: center;
       @include h1pricing;
     }
     h1,
@@ -433,6 +439,7 @@ $cabecera-text-color: #333;
       text-align: center;
       font-family: "Raleway";
     }
+    
     button {
       @include pricingbutton;
       position: absolute;
@@ -446,13 +453,16 @@ $cabecera-text-color: #333;
       &--premium {
         @include pricingboxdesktop;
         border: 1px solid #55dfb4;
-        button{
-          background-color: #55DFB4;
+        span{
+          @include spanpricing;
+          color: #55DFB4;
+        }
+        button {
+          background-color: #55dfb4;
         }
       }
     }
     &__cost {
-      
       span {
         @include spanpricing;
         color: #fb3b64;
@@ -462,6 +472,27 @@ $cabecera-text-color: #333;
       ul {
         @include ulpricing;
       }
+    }
+    &__professional {
+      position: relative;
+      width: 405px;
+      height: 500px;
+      left: 0px;
+      top: 0px;
+      background: #ffffff;
+      border: 1px solid #07ace6;
+      box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
+      border-radius: 18px;
+       span{
+        color: #07ACE6;
+       }
+       div{
+        text-align: center;
+       }
+       button{
+        top: 480px;
+        background-color: #07ACE6;
+       }
     }
   }
 }
