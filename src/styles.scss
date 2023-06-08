@@ -29,7 +29,6 @@ $cabecera-text-color: #333;
 }
 
 @mixin h1pricing {
-  
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
@@ -414,6 +413,8 @@ $cabecera-text-color: #333;
   }
 
   .pricing {
+    padding-bottom: 5px;
+    padding-top: 30px;
     background-color: white;
     &__content {
       display: flex;
@@ -422,13 +423,13 @@ $cabecera-text-color: #333;
 
       margin-bottom: 50px;
     }
-    p{
-      font-family: 'Raleway';
+    p {
+      font-family: "Raleway";
       font-style: normal;
       font-weight: 700;
       font-size: 12px;
       line-height: 14px;
-      color: #13253B;
+      color: #13253b;
     }
     h1 {
       text-align: center;
@@ -439,7 +440,7 @@ $cabecera-text-color: #333;
       text-align: center;
       font-family: "Raleway";
     }
-    
+
     button {
       @include pricingbutton;
       position: absolute;
@@ -453,9 +454,9 @@ $cabecera-text-color: #333;
       &--premium {
         @include pricingboxdesktop;
         border: 1px solid #55dfb4;
-        span{
+        span {
           @include spanpricing;
-          color: #55DFB4;
+          color: #55dfb4;
         }
         button {
           background-color: #55dfb4;
@@ -483,16 +484,78 @@ $cabecera-text-color: #333;
       border: 1px solid #07ace6;
       box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
       border-radius: 18px;
-       span{
-        color: #07ACE6;
-       }
-       div{
+      span {
+        color: #07ace6;
+      }
+      div {
         text-align: center;
-       }
-       button{
+      }
+      button {
         top: 480px;
-        background-color: #07ACE6;
-       }
+        background-color: #07ace6;
+      }
+    }
+  }
+
+  .contact {
+    
+    
+    padding-top: 3px;
+    padding-bottom: 50px;
+    margin-top: 0px;
+    background-color: white;
+   
+    &__content{
+      margin: 150px;
+      
+      display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    }
+
+    &__questions {
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-family: "Raleway";
+    }
+    h3,
+    p,
+    span {
+      font-family: "Open Sans";
+    }
+    span {
+      color: #08a6e4;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      p {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #707070;
+      }
+    }
+    input {
+      border: none;
+      border-bottom: 1px solid #95989a;
+    }
+    button {
+      color: white;
+      width: 226px;
+      height: 57px;
+      background: #08a6e4;
+      box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+      border-radius: 35px;
+      border: none;
+    }
+    #formbutton {
+      text-align: right;
     }
   }
 }
