@@ -6,7 +6,6 @@ $cabecera-text-color: #333;
 //Mixins
 
 @mixin cardscontainers {
-  
   margin: auto;
   align-content: center;
   width: 1124px;
@@ -125,7 +124,7 @@ $cabecera-text-color: #333;
     &__logo {
       display: none;
     }
-    
+
     h1 {
       padding-left: 35px;
       font-family: "Raleway";
@@ -634,6 +633,7 @@ $cabecera-text-color: #333;
     }
     &__button {
       background-color: transparent;
+      color:#07ACE6 ;
       border: none;
       float: right;
     }
@@ -643,8 +643,44 @@ $cabecera-text-color: #333;
       width: 2em;
       height: 2em;
     }
+    &__li{
+      color: #95989a;
+      list-style: none;
+       }
+    &__ultitle{
+      list-style: none;
+        color: #000000;
+      }
+    &__ul{
+      display: flex;
+      flex-direction: column;
+      padding-left: 1.5em;
+      justify-content:space-evenly;
+    }
     &__nav {
-      display: none;
+      margin-top: 40px;
+      display: flex;
+      align-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 175px;
+      width: 100%;
+      margin-left: -100%;
+      transition: all 0.2s linear;
+      z-index: 100;
+      background: #ffffff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 11px;
+      line-height: 15px;
+      letter-spacing: 3.28px;
+      text-transform: uppercase;
+    }
+    &__nav.show {
+      margin-left: 0%;
     }
   }
 
