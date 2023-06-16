@@ -1,19 +1,40 @@
+// {
+//     "liveServer.settings.multiRootWorkspaceName": "ProyectOneOxygen",
+//     "liveSassCompile.settings.includeItems": [
+
+
+//     ],
+//     "liveSassCompile.settings.generateMap": false,
+//     "liveSassCompile.settings.showAnnouncements": null,
+//     "liveSassCompile.settings.useNewCompiler": false,
+//     "liveSassCompile.settings.formats": [
+
+//         {
+//             "format": "compressed",
+//             "extensionName": ".css",
+//             "savePath": "/css/",
+//             "savePathReplacementPairs": null
+//         }
+//     ]
+// }
+
 {
-    "liveServer.settings.multiRootWorkspaceName": "ProyectOneOxygen",
-    "liveSassCompile.settings.includeItems": [
-
-
-    ],
-    "liveSassCompile.settings.generateMap": false,
-    "liveSassCompile.settings.showAnnouncements": null,
-    "liveSassCompile.settings.useNewCompiler": false,
     "liveSassCompile.settings.formats": [
-
         {
-            "format": "compressed",
+            "format": "expanded",
             "extensionName": ".css",
-            "savePath": "/public/css/",
-            "savePathReplacementPairs": null
+            "savePath": "/css"
+        },
+        {
+            "extensionName": ".min.css",
+            "format": "compressed",
+            "savePath": "/dist/css"
         }
-    ]
+    ],
+    // "liveSassCompile.settings.excludeList": [
+    //     "**/node_modules/**",
+    //     ".vscode/**"
+    // ],
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.autoprefix": ["defaults"]
 }
