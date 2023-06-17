@@ -624,7 +624,7 @@ $cabecera-text-color: #333;
   }
   body {
     margin: auto;
-    //min-width: 320px;
+    min-width: 377px;
     width: auto;
   }
   
@@ -704,7 +704,7 @@ $cabecera-text-color: #333;
 
   .banner {
     &__div {
-      max-width: 375px;
+      width: auto;
       text-align: center;
       margin-top: 2em;
       padding: 10px;
@@ -753,7 +753,7 @@ $cabecera-text-color: #333;
     align-items: center;
     text-align: center;
     font-family: "Raleway";
-    max-width: 375px;
+    width: auto;
 
     &__title {
       font-style: normal;
@@ -851,7 +851,7 @@ $cabecera-text-color: #333;
     align-items: center;
     padding-top: 20px;
     padding-left: 30px;
-    width: 375px;
+    width: auto;
     height: 1455.66px;
     
     background: #f7f7f7;
@@ -948,6 +948,7 @@ $cabecera-text-color: #333;
 
   .pricing {
     align-content: center;
+    width: auto;
 
     button {
       @include pricingbutton;

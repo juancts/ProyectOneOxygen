@@ -563,6 +563,7 @@
   }
   body {
     margin: auto;
+    min-width: 377px;
     width: auto;
   }
   .header {
@@ -635,7 +636,7 @@
     margin-left: 0%;
   }
   .banner__div {
-    max-width: 375px;
+    width: auto;
     text-align: center;
     margin-top: 2em;
     padding: 10px;
@@ -678,7 +679,7 @@
     align-items: center;
     text-align: center;
     font-family: "Raleway";
-    max-width: 375px;
+    width: auto;
   }
   .platform__title {
     font-style: normal;
@@ -753,7 +754,7 @@
     align-items: center;
     padding-top: 20px;
     padding-left: 30px;
-    width: 375px;
+    width: auto;
     height: 1455.66px;
     background: #f7f7f7;
   }
@@ -855,6 +856,7 @@
   }
   .pricing {
     align-content: center;
+    width: auto;
   }
   .pricing button {
     font-family: "Open Sans";
