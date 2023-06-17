@@ -104,6 +104,9 @@ $cabecera-text-color: #333;
 // DESKTOP
 
 @media (min-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     // background: #e5e5e5;
 
@@ -615,6 +618,9 @@ $cabecera-text-color: #333;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+  }
+  html {
+    scroll-behavior: smooth;
   }
   body {
     margin: auto;
