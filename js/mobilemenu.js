@@ -1,5 +1,4 @@
-const toggleButton = document.getElementById("button_menu");
-const navWrapper = document.getElementById("nav");
+
 import  {btncerrar, hambur} from "./xtras.js";
 //import hambur from "./xtras.js";
 
