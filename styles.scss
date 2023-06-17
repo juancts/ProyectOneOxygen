@@ -111,7 +111,10 @@ $cabecera-text-color: #333;
     // margin-left: 50px;
     // margin-right: 50px;
   }
-
+  a{
+    text-decoration: none; 
+    color: inherit;
+  }
   .header {
     background: #ffffff;
     width: 100%;
@@ -834,9 +837,8 @@ $cabecera-text-color: #333;
     padding-top: 20px;
     padding-left: 30px;
     width: 375px;
-    height: 1395.66px;
-    left: 0px;
-    top: 1426px;
+    height: 1455.66px;
+    
     background: #f7f7f7;
 
     h2 {
@@ -921,7 +923,7 @@ $cabecera-text-color: #333;
       }
       &__rectangle6 {
         background-color: #55dfb4;
-        width: 314px;
+        width: 318px;
         height: 195px;
         position: absolute;
         z-index: 1;
@@ -1014,7 +1016,11 @@ $cabecera-text-color: #333;
       li {
         margin-bottom: 20px;
       }
-    }
+      button{
+        position: absolute;
+        left: -80px;
+      }
+      }
 
     &__professional {
       position: relative;
@@ -1031,10 +1037,11 @@ $cabecera-text-color: #333;
       span {
         color: #07ace6;
       }
-      button {
+      button{
         position: absolute;
         background: #07ace6;
-        bottom: -20px;
+        top: 250px;
+        
         left: 90px;
       }
     }

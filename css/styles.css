@@ -2,6 +2,10 @@
   body {
     margin: 0%;
   }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
   .header {
     background: #ffffff;
     width: 100%;
@@ -740,9 +744,7 @@
     padding-top: 20px;
     padding-left: 30px;
     width: 375px;
-    height: 1395.66px;
-    left: 0px;
-    top: 1426px;
+    height: 1455.66px;
     background: #f7f7f7;
   }
   .cardsection h2 {
@@ -836,7 +838,7 @@
   }
   .cardsection__container__rectangle6 {
     background-color: #55dfb4;
-    width: 314px;
+    width: 318px;
     height: 195px;
     position: absolute;
     z-index: 1;
@@ -953,6 +955,10 @@
   .pricing__details li {
     margin-bottom: 20px;
   }
+  .pricing__details button {
+    position: absolute;
+    left: -80px;
+  }
   .pricing__professional {
     position: relative;
     margin-top: 50px;
@@ -972,7 +978,7 @@
   .pricing__professional button {
     position: absolute;
     background: #07ace6;
-    bottom: -20px;
+    top: 250px;
     left: 90px;
   }
   .contact {

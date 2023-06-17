@@ -22,8 +22,8 @@
   </head>
   <body>
     <header class="header">
-      <h1>OXYGEN Shop</h1>
-      <img class="header__logo" src="./assets/OXYGEN Shop.png" alt="" />
+      <a href="./index.html"><h1>OXYGEN Shop</h1></a>
+      <a href="./index.html"><img class="header__logo" src="./assets/OXYGEN Shop.png" alt="" /></a>
       <button id="button_menu" class="header__button" aria-label="Toggle Navigation">
         <svg
           class="header__button"
@@ -41,10 +41,10 @@
 
       <nav id="nav" class="header__nav">
         <ul class="header__ul">
-          <li class="header__ultitle">WHY US</li>
-          <li class="header__li">BENEFITS</li>
-          <li class="header__li">PRICES</li>
-          <li class="header__li">CONTACT</li>
+          <a href="#whyus"><li class="header__ultitle">WHY US</li></a>
+          <a href="#benefits"><li class="header__li">BENEFITS</li></a>
+          <a href="#prices"><li class="header__li">PRICES</li></a>
+          <a href="#contact"><li class="header__li">CONTACT</li></a>
         </ul>
       </nav>
     </header>
@@ -71,7 +71,7 @@
     <!-- END BANNER SECTION -->
 
     <!-- MOST POPULAR PLATFORM SECTION -->
-    <section class="platform">
+    <section id="whyus" class="platform">
       <p class="platform__title">The most popular sales platform in country</p>
 
       <!-- DAILY ENTRIES -->
@@ -144,7 +144,7 @@
 
     <!-- CARDS SECTION -->
     <!-- section 1 -->
-    <section class="cardsection">
+    <section id="benefits" class="cardsection">
       <div class="cardsection__container">
         <div class="cardsection__container__img">
           <img
@@ -223,7 +223,7 @@
 
     <!-- PRICING SECTION -->
 
-    <section class="pricing">
+    <section id="prices" class="pricing">
       
         <h1>Pricing</h1>
         
@@ -274,7 +274,7 @@
               </li>
             </ul>
             </div>
-          <button>Begin</button>
+          <button class="pricing__professional__btn">Begin</button>
         </div>
   
         <div class="pricing__box--premium">
@@ -302,7 +302,7 @@
     <!-- END PRICING SECTION -->
 
     <!-- CONTACT SECTION -->
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="contact__content">
 
         <div class="contact__questions">
