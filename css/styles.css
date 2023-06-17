@@ -1052,8 +1052,11 @@
     line-height: 22px;
     color: #a5a5a5;
   }
-  .contact form {
+  .contact__form {
     display: block;
+  }
+  .contact__form__btn {
+    text-align: end;
   }
   .contact span {
     text-align: center;
@@ -1088,7 +1091,6 @@
     border-radius: 4px;
   }
   .contact__checkcontainer #textocheck {
-    position: absolute;
     top: -18px;
     font-family: "Open Sans";
     font-style: normal;
@@ -1105,12 +1107,9 @@
     left: 0px;
   }
   .contact button {
-    position: absolute;
     border: none;
     width: 226px;
     height: 57px;
-    left: 150px;
-    top: 170px;
     background: #08a6e4;
     box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
     border-radius: 35px;

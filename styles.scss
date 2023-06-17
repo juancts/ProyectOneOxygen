@@ -1087,7 +1087,6 @@ $cabecera-text-color: #333;
     margin-top: 50px;
     width: 100%;
 
-    
     h1 {
       text-align: center;
       font-family: "Raleway";
@@ -1121,9 +1120,11 @@ $cabecera-text-color: #333;
       line-height: 22px;
       color: #a5a5a5;
     }
-    form {
+    &__form {
       display: block;
-  
+      &__btn{
+            text-align: end;
+      }
     }
     span {
       text-align: center;
@@ -1160,7 +1161,7 @@ $cabecera-text-color: #333;
         border-radius: 4px;
       }
       #textocheck {
-        position: absolute;
+        //position: absolute;
         top: -18px;
         font-family: "Open Sans";
         font-style: normal;
@@ -1179,12 +1180,9 @@ $cabecera-text-color: #333;
       }
     }
     button {
-      position: absolute;
       border: none;
       width: 226px;
       height: 57px;
-      left: 150px;
-      top: 170px;
       background: #08a6e4;
       box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
       border-radius: 35px;

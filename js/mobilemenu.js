@@ -1,5 +1,5 @@
 
-import  {btncerrar, hambur} from "./xtras.js";
+import  {btncerrar, hambur, toggleButton, navWrapper} from "./xtras.js";
 //import hambur from "./xtras.js";
 
 //const { btncerrar, hambur } = require("./xtras.js")

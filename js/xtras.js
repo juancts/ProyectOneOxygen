@@ -35,4 +35,4 @@ const hambur = () => {
   `;
   };
 
-export {btncerrar, hambur};
+export {btncerrar, hambur, toggleButton, navWrapper};
