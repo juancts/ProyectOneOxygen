@@ -625,13 +625,13 @@ $cabecera-text-color: #333;
   body {
     margin: auto;
     //min-width: 320px;
-    max-width: 375px;
+    width: auto;
   }
   
   .header {
     display: inline-block;
     background-color: #ffffff;
-    min-width: 375px;
+    width: 100%;
     min-height: 70px;
     padding: 1em;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
