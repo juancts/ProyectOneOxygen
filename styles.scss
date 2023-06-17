@@ -1123,6 +1123,7 @@ $cabecera-text-color: #333;
     &__form {
       display: block;
       &__btn{
+            padding-right: 5%;
             text-align: end;
       }
     }
@@ -1181,8 +1182,8 @@ $cabecera-text-color: #333;
     }
     button {
       border: none;
-      width: 226px;
-      height: 57px;
+      width: 150px;
+      height: 47px;
       background: #08a6e4;
       box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
       border-radius: 35px;
