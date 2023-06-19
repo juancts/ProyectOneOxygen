@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/37d230adbd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="stylesheet"
@@ -317,13 +318,13 @@
           <p><i class="fas fa-phone"></i> 123 456 789</p>
         </div>
   
-        <form class="contact__form" action="">
+        <form id="contactForm" class="contact__form" action="">
           <span>NAME</span>
-          <input type="text"/>
+          <input type="text" id="nombre" required/>
           <span>EMAIL</span>
-          <input type="text"/>
+          <input type="text" id="email" required/>
           <div class="contact__checkcontainer">
-            <input id="checkbox" type="checkbox" />
+            <input id="checkbox" type="checkbox" required/>
             <p id="textocheck">
               I hereby give consent for my personal data included in my
               application to be processed for
@@ -350,6 +351,11 @@
     </section>
     <!-- END CONTACT SECTION -->
 
+    <!-- GO TO TOP BUTTON -->
+    <a href="#" class="to-top">
+      <i class="fa-solid fa-circle-up"></i>
+    </a>
+
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer__img">
@@ -364,5 +370,8 @@
     <!-- END FOOTER -->
     <script type="module" src="./js/mobilemenu.js"></script>
     <script type="module" src="./js/percentagescroller.js"></script>
+    <script type="module" src="./js/gototop.js"></script>
+    <script type="module" src="./js/validationform.js"></script>
+    <script type="module" src="./js/fetchdata.js"></script>
   </body>
 </html>

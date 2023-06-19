@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
-    console.log("estoy en barra")
     const progressbarinner = document.querySelector('.header__progressbar__inner');
-    console.log(progressbarinner)
+    
     window.addEventListener('scroll', function(){
         let h = document.documentElement;
         let st = h.scrollTop || document.body.scrollTop;
@@ -10,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function(){
         let roundedPercent = Math.round(percent);
         progressbarinner.style.width = percent + "%";
         //progressbarinner.innerText = roundedPercent + "%";
-        console.log(progressbarinner);
-        console.log(percent);
+    
     })
 })
