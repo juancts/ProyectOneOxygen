@@ -76,6 +76,18 @@
     pointer-events: auto;
     opacity: 1;
   }
+  #slider {
+    position: relative;
+    overflow: hidden;
+  }
+  #slider img {
+    display: none;
+    width: 50%;
+    height: 50%;
+  }
+  #slider img.active {
+    display: block;
+  }
   .header {
     background: #ffffff;
     width: 100%;
