@@ -1,23 +1,25 @@
+const slide = ".slider-content__slider__slides__slide";
+const button = ".slider-content__slider__slider-btns";
+const prevButton = document.querySelector("button .prev");
+console.log();
 class Slider {
   constructor(id) {
     this.slider = document.getElementById(id);
-    this.images = this.slider.getElementsByTagName('img');
+    this.images = document.querySelectorAll(slide);
     this.currentImageIndex = 0;
     this.timer = null;
-    
-    this.showImage (this.currentImageIndex);
+    this.showImage(this.currentImageIndex);
     this.addListeners();
-    this.startSlidesshow();
+    this.startSlideshow();
   }
 
-
-  showImage(index){
+  showImage(index) {
     for (let i = 0; i < this.images.length; i++) {
-        this.images[i].classList.remove('active');
-
+      this.images[i].classList.remove("active");
     }
     console.log(this.images);
-   this.images[index].classList.add('active');     
+    console.log("SHOW IMAGES:", this.images);
+    this.images[index].classList.add("active");
   }
 
   // Muestra la siguiente imagen en el slider
@@ -38,54 +40,43 @@ class Slider {
     this.showImage(this.currentImageIndex);
   }
 
-// Inicia la reproducción automática del slider
-startSlideshow() {
+  // Inicia la reproducción automática del slider
+  startSlideshow() {
+    console.log("show started");
     this.timer = setInterval(() => {
       this.nextImage();
     }, 3000);
   }
-// Detiene la reproducción automática del slider
-stopSlideshow() {
+  // Detiene la reproducción automática del slider
+  stopSlideshow() {
     clearInterval(this.timer);
   }
 
- // Agrega los event listeners a los botones y puntos de navegación del slider
- addListeners() {
-    const prevButton = document.createElement('button');
-    prevButton.innerText = 'Prev';
-    prevButton.addEventListener('click', () => {
+  // Agrega los event listeners a los botones y puntos de navegación del slider
+  addListeners() {
+    const prevButton = document.querySelector(button + " .prev");
+    prevButton.addEventListener("click", () => {
+        event.preventDefault();
       this.prevImage();
     });
-    this.slider.appendChild(prevButton);
 
-    const nextButton = document.createElement('button');
-    nextButton.innerText = 'Next';
-    nextButton.addEventListener('click', () => {
+    const nextButton = document.querySelector(button + " .next");
+    nextButton.addEventListener("click", () => {
+        event.preventDefault();
       this.nextImage();
     });
-    this.slider.appendChild(nextButton);
 
-    for (let i = 0; i < this.images.length; i++) {
-      const dot = document.createElement('span');
-      dot.classList.add('dot');
-      dot.addEventListener('click', () => {
-        this.showImage(i);
-        this.currentImageIndex = i;
-      });
-      this.slider.appendChild(dot);
-    }
 
     // Detiene la reproducción automática al colocar el mouse sobre el slider
-    this.slider.addEventListener('mouseenter', () => {
+    this.slider.addEventListener("mouseenter", () => {
       this.stopSlideshow();
     });
 
     // Reanuda la reproducción automática al quitar el mouse del slider
-    this.slider.addEventListener('mouseleave', () => {
+    this.slider.addEventListener("mouseleave", () => {
       this.startSlideshow();
     });
   }
-
 }
 
-const slider = new Slider('slider');
+const slider = new Slider("slider");

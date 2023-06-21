@@ -315,13 +315,28 @@
     <!-- END PRICING SECTION -->
 
     <!-- SLIDER SECTION -->
-    <section>
-      <div id="slider">
-        <img  src="./assets/slider/photo1.jpg" alt="">
-        <img src="./assets/slider/photo2.jpg" alt="">
-        <img src="./assets/slider/photo3.jpg" alt="">
+    <section class="slider-content">
+          <div id="slider" class="slider-content__slider">
+              <div id="slides" class="slider-content__slider__slides">
+                <div id="slide" class="slider-content__slider__slides__slide">
+                <img  src="./assets/slider/photo1.jpg" alt="">
+              </div>
+              <div class="slider-content__slider__slides__slide">
+                <img src="./assets/slider/photo2.jpg" alt="">
+              </div>
+              <div class="slider-content__slider__slides__slide">
+                <img src="./assets/slider/photo3.jpg" alt="">
+              </div>
+            </div>
+            <div class="slider-content__slider__slider-btns">
+              <a href="" class="prev">&laquo;</a>
+              <a href="" class="next">&raquo;</a>
+            </div>
+            
 
-      </div>
+          </div>
+
+      
     </section>
       
 <!-- END SLIDER SECTION -->
@@ -391,6 +406,7 @@
     
 
     <!-- FOOTER -->
+
     <footer class="footer">
       <div class="footer__img">
         <img src="./assets/OXYGEN Shop.png" alt="Logo" />
@@ -401,7 +417,9 @@
         <a href="http://facebook.com"><img src="./assets/facebook.svg" alt="facebook" /></a>
       </div>
     </footer>
+
     <!-- END FOOTER -->
+    
     <script type="module" src="./js/mobilemenu.js"></script>
     <script type="module" src="./js/percentagescroller.js"></script>
     <script type="module" src="./js/gototop.js"></script>
