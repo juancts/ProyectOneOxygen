@@ -710,6 +710,44 @@
     margin: 0;
     padding: 0;
   }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    /* identical to box height */
+    letter-spacing: 3.28px;
+    color: #08a6e4;
+  }
+  .modal button {
+    background: #08a6e4;
+    box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+    border-radius: 35px;
+    border: none;
+  }
+  .modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 300px;
+    z-index: 2000;
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
   html {
     scroll-behavior: smooth;
   }
@@ -722,25 +760,6 @@
     margin: auto;
     min-width: 377px;
     width: auto;
-  }
-  #slider {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-  #slider img {
-    display: none;
-    justify-content: center;
-  }
-  #slider img.active {
-    display: flex;
-    width: 50%;
-    height: 50%;
-    text-align: center;
-    display: block;
   }
   .header {
     display: inline-block;
@@ -1168,6 +1187,66 @@
     background: #07ace6;
     top: 250px;
     left: 90px;
+  }
+  .slider-content {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slider-content__slider {
+    padding-top: 50px;
+    position: relative;
+    width: 67%;
+    margin: 1rem auto;
+    text-align: center;
+  }
+  .slider-content__slider a {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: thin solid black;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+  }
+  .slider-content__slider a:hover {
+    color: #08a6e4;
+  }
+  .slider-content__slider__slider-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: 0.5rem;
+  }
+  .slider-content__slider__slides {
+    position: relative;
+    height: 130px;
+  }
+  .slider-content__slider__slides__slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;
+  }
+  .slider-content__slider__slides__slide img {
+    height: inherit;
+    width: inherit;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .slider-content__slider__slides__slide.active {
+    opacity: 1;
+    visibility: visible;
   }
   .contact {
     margin-top: 50px;
