@@ -696,6 +696,9 @@
     line-height: 16px;
     color: #707070;
   }
+  .contact form span {
+    padding: 25px;
+  }
   .contact input {
     border: none;
     border-bottom: 1px solid #95989a;
@@ -1132,6 +1135,10 @@
     line-height: 24px;
     color: #13253b;
   }
+  .pricing__box:hover {
+    border: 1px solid #fb3b64;
+    box-shadow: 5px 10px 27px #fb3b64;
+  }
   .pricing__box {
     position: relative;
     margin-left: 35px;
@@ -1142,6 +1149,14 @@
     width: 293px;
     height: 251px;
     border: 1px solid #fb3b64;
+  }
+  .pricing__box--professional:hover {
+    border: 1px solid #07ace6;
+    box-shadow: 5px 10px 27px #07ace6;
+  }
+  .pricing__box--premium:hover {
+    border: 1px solid #55dfb4;
+    box-shadow: 5px 10px 27px #55dfb4;
   }
   .pricing__box--professional {
     position: relative;

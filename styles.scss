@@ -87,11 +87,19 @@ $cabecera-text-color: #333;
       left: 0px;
       top: 0px;
       background: #ffffff;
-      
-      border-radius: 18px;
-     
-    
+      border-radius: 18px;    
 }
+
+@mixin hoverboxphone{
+  position: relative;
+      width: 373px;
+      height: 462px;
+      left: 0px;
+      top: 0px;
+      background: #ffffff;
+      border-radius: 18px;    
+}
+
 
 @mixin pricingbox {
   position: relative;
@@ -793,6 +801,9 @@ $cabecera-text-color: #333;
         line-height: 16px;
         color: #707070;
       }
+      span{
+        padding:25px;
+      }
     }
     input {
       border: none;
@@ -1264,11 +1275,23 @@ $cabecera-text-color: #333;
       line-height: 24px;
       color: #13253b;
     }
-
+    &__box:hover {
+      border: 1px solid #fb3b64;
+      box-shadow: 5px 10px 27px #fb3b64;
+      
+  }
     &__box {
       @include pricingbox;
       border: 1px solid #fb3b64;
 
+      &--professional:hover{
+        border: 1px solid #07ace6;
+      box-shadow: 5px 10px 27px #07ace6;
+      }
+      &--premium:hover{
+        border: 1px solid #55dfb4;
+      box-shadow: 5px 10px 27px #55dfb4;
+      }
 
       &--professional{
         @include pricingbox;
