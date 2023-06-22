@@ -204,6 +204,7 @@
   }
   .platform__dailyentries__elipse {
     position: absolute;
+    left: 11vh;
     z-index: 1;
   }
   .platform__dailyentries__person2 {
@@ -213,6 +214,7 @@
   }
   .platform__seenproducts__elipse2 {
     position: absolute;
+    left: 11vh;
     z-index: 1;
   }
   .platform__seenproducts__eye {
@@ -222,6 +224,7 @@
   }
   .platform__addedposts__elipse3 {
     position: absolute;
+    left: 11vh;
     z-index: 1;
   }
   .platform__addedposts__catalog {

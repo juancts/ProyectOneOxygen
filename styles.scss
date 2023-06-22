@@ -369,6 +369,7 @@ $cabecera-text-color: #333;
     &__dailyentries {
       &__elipse {
         position: absolute;
+        left: 11vh;
         z-index: 1;
       }
       &__person2 {
@@ -381,6 +382,7 @@ $cabecera-text-color: #333;
     &__seenproducts {
       &__elipse2 {
         position: absolute;
+        left: 11vh;
         z-index: 1;
       }
       &__eye {
@@ -392,6 +394,7 @@ $cabecera-text-color: #333;
     &__addedposts {
       &__elipse3 {
         position: absolute;
+        left: 11vh;
         z-index: 1;
       }
       &__catalog {
