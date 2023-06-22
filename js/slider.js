@@ -17,9 +17,7 @@ class Slider {
     for (let i = 0; i < this.images.length; i++) {
       this.images[i].classList.remove("active");
     }
-    console.log(this.images);
-    console.log("SHOW IMAGES:", this.images);
-    this.images[index].classList.add("active");
+     this.images[index].classList.add("active");
   }
 
   // Muestra la siguiente imagen en el slider

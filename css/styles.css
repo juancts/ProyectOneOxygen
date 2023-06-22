@@ -502,6 +502,37 @@
     border-radius: 18px;
     border: 1px solid #fb3b64;
   }
+  .pricing__box--professional:hover {
+    border: 1px solid #07ace6;
+    box-shadow: 5px 10px 27px #07ace6;
+  }
+  .pricing__box--premium:hover {
+    border: 1px solid #55dfb4;
+    box-shadow: 5px 10px 27px #55dfb4;
+  }
+  .pricing__box--professional {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 372px;
+    height: 461px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #07ace6;
+  }
+  .pricing__box--professional span {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 46px;
+    line-height: 64px;
+    color: #07ace6;
+  }
+  .pricing__box--professional button {
+    background-color: #07ace6;
+  }
   .pricing__box--premium {
     position: relative;
     display: flex;
@@ -541,26 +572,16 @@
     font-size: 14px;
     line-height: 19px;
   }
-  .pricing__professional {
+  .pricing__box:hover {
     position: relative;
-    width: 405px;
-    height: 500px;
+    width: 373px;
+    height: 462px;
     left: 0px;
     top: 0px;
     background: #ffffff;
-    border: 1px solid #07ace6;
-    box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
     border-radius: 18px;
-  }
-  .pricing__professional span {
-    color: #07ace6;
-  }
-  .pricing__professional div {
-    text-align: center;
-  }
-  .pricing__professional button {
-    top: 480px;
-    background-color: #07ace6;
+    border: 1px solid #fb3b64;
+    box-shadow: 5px 10px 27px #fb3b64;
   }
   .slider-content {
     margin: 0;
@@ -570,7 +591,6 @@
     align-items: center;
   }
   .slider-content__slider {
-    border: solid red;
     position: relative;
     width: 50%;
     margin: 1rem auto;
@@ -763,7 +783,7 @@
   body {
     margin: auto;
     min-width: 377px;
-    width: auto;
+    width: 100%;
   }
   .to-top {
     position: fixed;
@@ -1123,6 +1143,23 @@
     height: 251px;
     border: 1px solid #fb3b64;
   }
+  .pricing__box--professional {
+    position: relative;
+    margin-left: 35px;
+    margin-top: 30px;
+    align-content: center;
+    align-items: center;
+    border-radius: 18px;
+    width: 293px;
+    height: 251px;
+    border: 1px solid #07ACE6;
+  }
+  .pricing__box--professional button {
+    position: absolute;
+    bottom: -20px;
+    right: 70px;
+    background: #07ACE6;
+  }
   .pricing__box--premium {
     position: relative;
     margin-left: 35px;
@@ -1165,6 +1202,7 @@
     top: 25%;
     display: inline-block;
     margin-left: 25px;
+    color: #55dfb4;
   }
   .pricing__cost--premium span {
     font-family: "Open Sans";
@@ -1172,7 +1210,20 @@
     font-weight: 300;
     font-size: 46px;
     line-height: 64px;
-    color: #55dfb4;
+  }
+  .pricing__cost--professional {
+    position: absolute;
+    top: 25%;
+    display: inline-block;
+    margin-left: 25px;
+    color: #07ACE6;
+  }
+  .pricing__cost--professional span {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 46px;
+    line-height: 64px;
   }
   .pricing__details {
     position: absolute;
