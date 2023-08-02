@@ -32,31 +32,7 @@ JavaScript: Provides interactivity and dynamic functionality.
 Sass: Used as the CSS preprocessor to enhance maintainability and modularity.
 BEM (Block, Element, Modifier): A methodology for organizing CSS classes and achieving a more structured codebase.
 HTML: The markup language used for structuring the page content.
-Project Structure
-The repository is organized as follows:
 
-css
-Copy code
-├── index.html
-├── css/
-│   ├── style.css
-│   └── style.css.map
-├── dist/
-    └──styles.min.css
-    └──styles.min.css.map
-├── fonts    
-├── js/
-│   └── coinselector.js
-    └── fetchdata.js
-    └── gototop.js
-    └── mobilemenu.js
-    └── modal.js
-    └── percentagescroller.js
-    └── slider.js
-    └── validationform.js
-    └── xtras.js
-
-├── assets/
 
 
 index.html: The main HTML file representing the single-page application.
